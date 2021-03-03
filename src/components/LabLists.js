@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import paket from '../data/paket';
 import LabCard from './LabCard';
 
 const LabsContainer = styled.div`
@@ -10,13 +8,7 @@ const LabsContainer = styled.div`
   gap: 2rem;
 `;
 
-function LabLists() {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    setData(paket);
-  }, []);
-
+function LabLists({ data }) {
   return (
     <LabsContainer>
       {data.map((data, i) => (

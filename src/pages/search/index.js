@@ -1,8 +1,10 @@
+import { useEffect, useState } from 'react';
 import FilterLabResult from '../../components/FilterLabResult';
 import LabLists from '../../components/LabLists';
 import SearchLab from '../../components/SearchLab';
 import Banner from '../../components/Banner';
 import styled from 'styled-components';
+import paket from '../../data/paket';
 
 const MainStyle = styled.main`
   padding: 3rem 2rem 5rem;
@@ -20,7 +22,12 @@ const ContentStyle = styled.div`
   }
 `;
 
-function index() {
+function Index() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    setData(paket);
+  }, []);
   return (
     <div>
       <Banner />
@@ -32,11 +39,11 @@ function index() {
         </h3>
         <ContentStyle>
           <FilterLabResult />
-          <LabLists />
+          <LabLists data={data} />
         </ContentStyle>
       </MainStyle>
     </div>
   );
 }
 
-export default index;
+export default Index;
