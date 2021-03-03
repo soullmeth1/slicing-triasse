@@ -100,8 +100,10 @@ function SearchLab() {
             <input list="provinsi" name="provinsi" placeholder="DKI Jakarta" />
             <FaMapMarkerAlt />
             <datalist id="provinsi">
-              <option value="FAIQ" />
-              <option value="FATIH" />
+              <option value="DKI Jakarta" />
+              <option value="Jawa Barat" />
+              <option value="Jawa Tengah" />
+              <option value="Jawa Timur" />
             </datalist>
           </fieldset>
           <fieldset>
@@ -113,8 +115,10 @@ function SearchLab() {
             />
             <GrMap />
             <datalist id="kabupaten">
-              <option value="FAIQ" />
-              <option value="FATIH" />
+              <option value="Jakarta Selatan" />
+              <option value="Jakarta Utara" />
+              <option value="Jakarta Timur" />
+              <option value="Jakarta Barat" />
             </datalist>
           </fieldset>
           <fieldset>
@@ -122,8 +126,9 @@ function SearchLab() {
             <input list="paket" name="paket" placeholder="Pap Smear" />
             <RiStethoscopeLine />
             <datalist id="paket">
-              <option value="FAIQ" />
-              <option value="FATIH" />
+              <option value="Paket Skrining Diabetes Mellitus" />
+              <option value="Paket Skrining Fungsi Ginjal" />
+              <option value="Paket Skrining Fungsi Hati" />
             </datalist>
           </fieldset>
         </FormSearchStyle>
